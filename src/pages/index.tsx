@@ -9,7 +9,7 @@ export default function Home() {
       <div className="menu-container">
         <Image
           className="relative"
-          src="/cardápio_de_porções_e_pasteis.svg"
+          src="/cardapio_de_porcoes_e_pasteis.svg"
           alt="Next.js Logo"
           width={375}
           height={750}
