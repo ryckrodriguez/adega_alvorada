@@ -18,7 +18,7 @@ export default function Home() {
         />
       </div>
       <div id="wpp-div-btn">
-        <a id="wpp-btn" href="https://wa.me/5511993904369" target="_blank">
+        <a id="wpp-btn" href="https://wa.me/5511986135291?text=Olá!%20Eu gostaria de pedir:%0D%0A" target="_blank">
           <FaWhatsapp/>
         </a>
       </div>
