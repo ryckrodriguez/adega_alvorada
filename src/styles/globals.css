@@ -39,3 +39,68 @@ body {
   height: 100vh;
   width: 100vw;
 }
+
+
+/* CSS referente ao botão do whatsapp pulsante na lateral inferior direita da tela (Início do trecho de código) */
+#wpp-div-btn {
+  right: 5%;
+  bottom: 5%;
+  display: flex;
+  z-index: 99999;
+  position: fixed;
+  transition: all 250ms ease-in-out 0s;
+  flex-direction: column-reverse;
+}
+
+#wpp-btn {
+  color: rgb(255, 255, 255);
+  width: 60px;
+  cursor: pointer;
+  height: 60px;
+  margin: 0px auto 10px;
+  display: block;
+  position: relative;
+  box-shadow: rgb(0 0 0 / 16%) 0px 2px 5px 0px, rgb(0 0 0 / 12%) 0px 2px 10px 0px;
+  text-align: center;
+  transition: all 250ms ease-in-out 0s;
+  visibility: visible;
+  user-select: none;
+  border-radius: 50%;
+  background-size: cover;
+  text-decoration: none;
+  background-color: rgb(82, 184, 3);
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: center center;
+  outline: none !important;
+  max-width: none !important;
+}
+
+#wpp-btn svg {
+  top: 50%;
+  left: 50%;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  font-size: 34px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  transition: all 0.2s ease-out 0s;
+}
+
+#wpp-btn::after {
+  content: '';
+  width: 30px; height: 30px;
+  border-radius: 100%;
+  border: 6px solid rgb(111, 255, 0);
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 3s infinite;
+}
+
+#wpp-btn:hover::after, #wpp-btn:focus::after {
+  animation: none;
+  display: none;
+}

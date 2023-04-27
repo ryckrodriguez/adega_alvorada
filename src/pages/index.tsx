@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
+import { FaWhatsapp } from "react-icons/fa";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,6 +16,11 @@ export default function Home() {
           height={750}
           priority
         />
+      </div>
+      <div id="wpp-div-btn">
+        <a id="wpp-btn" href="https://wa.me/5511993904369" target="_blank">
+          <FaWhatsapp/>
+        </a>
       </div>
     </main>
   )
